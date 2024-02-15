@@ -5,32 +5,76 @@
     font-family: 'Lobster', cursive;
   
 }
-
-.caixa-principal {
+body{
     height: 100vh;
-    width: 100%;
-    background: #84afce;
+    width: 100vw;
 }
 
-nav {
+.caixa-principal{
+   
+}
+
+.primeira-imagem{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+    justify-content: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color:#EEDAD3;
+    width: 1360px;
+    height: 550px;
+   
+}
+
+.h1-primeira-imagem{
+    margin-bottom: 20px;
+}
+
+.div-títulos-h2-h4{
+    margin-right: 20%;
+}
+.primeira-imagem img{
+    height: 350px;
+    width: 300px;
+}
+
+
+.div-menu{
+    background-color: #040404;
+}
+
+.texto-h2{
+    
+    color: #fffefe;
+}
+
+ul{
+   
+    display: inline;
+    margin-left: 60%;
     color: white
 }
 
 .portifolio {
+    padding-top: 10px;
     color: white;
-    font-size: 45px;
+    font-size: 20px;
+    font-weight: 200px;
+    margin-left: 20px;
+    
+}
+    
+
+.texto{
+    color: white;
+    font-size: 20px;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 .portifolio span {
-    color: rgb(218, 38, 98);
+    color: #997593;
     
 
 }
@@ -60,60 +104,83 @@ li:hover {
     
 }
 
-.meu-nome {
+/*meu-nome {
     position: absolute;
     top: 40%;
     left: 5%;
     font-size: 30px;
     color: white;
     font-weight: 500px;
-}
+}*/
 
-.meu-nome span {
-    color: rgb(218, 38, 98);
-}
-
-.segunda-caixona {
-    background: #cee5f3;
-}
 
 
 section{
-    display: flex;
+
+    position: relative;
+   /*
     align-items: center;
-    padding: 60px 15%;
+    padding: 60px 15%;*/
 }
 
+#texto{
+    position: absolute;
+    font-size: 32px;
+    left: 250px;
+    top: 100px;
+   
+}
+
+#imagem {
+    position: absolute;
+    opacity: 0.3;
+    width: 1360px;
+    height: 500px;
+  }
+  
+
 section div h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: rgb(146, 37, 73);
     
 }
 
 section div img {
-    margin-right: 30px;
+    margin-right: 20px;
     border: 2px solid  rgb(146, 37, 73);
     border-radius: 50%;
     height: 400px;
 }
 
 section div p {
+  
     margin-top: 20px;
-    margin-bottom: 60px;
-    color: rgb(146, 37, 73);
-    font-size: 18px;
+    margin-bottom: 40px;
+    color: rgb(12, 12, 12);
+    font-size:20px;
+    
     
 }
 
+.paragrafo-segunda-caixona{
+    width: 1000px;
+    border: 3px dashed;
+    padding: 10px;
+    
+}
+
+
+
 .butão {
- color: rgb(146, 37, 73);
- background-color: rgb(239, 206, 206);
+ color: #f0cec0;
+ background-color: #292828;
  width: 150px;
  height: 50px;
  font-size: 18px;
  border: none;
  border-radius: 20px;
  cursor: pointer;
+ padding: 10px;
  
 }
 
@@ -121,11 +188,14 @@ section div p {
     background-color: white;
     border: 2px solid rgb(146, 37, 73);
     transition: 0.5s;
+    color: #040404;
 }
 
 .projetos {
-    background-color: #84afce;
-    padding-top: 50px;
+    background-color:#EEDAD3;
+    padding-top: 100px;
+    margin-top: 500px;
+   
    
 }
 
@@ -138,28 +208,30 @@ section div p {
 }
 
 .instagram {
-    background-color: #cee5f3;
-    width: 365px;
-    height: 335px;
-    border-radius: 20px;
-    padding: 20px 35px;
+    
+    width: 400px;
+    height: 290px;
+    border: 5px dashed;
+    padding: 10px 15px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-right: 25px;
 }
+    
 
 .instagram img {
-    height: 100px;
+    height: 70px;
 }
 
 .instagram h5 {
     color: rgb(49, 49, 108);
-    font-size: 24px;
+    font-size: 15px;
 }
 
 .instagram p {
-    color: rgb(146, 37, 73);
-    margin-top: 20px;
-    margin-bottom: 40px;
+    color: rgb(175, 48, 90);
+    margin-top: 10px;
+    margin-bottom: 30px;
     
 }
 
@@ -167,8 +239,8 @@ section div p {
     border: 2px solid rgb(146, 37, 73);
     color: rgb(146, 37, 73);
     background-color: rgb(239, 206, 206);
-    border-radius: 25px;
-    padding: 10px 20px;
+    border-radius: 15px;
+    padding: 10px 10px;
     cursor: pointer;
    
 }
@@ -180,19 +252,59 @@ section div p {
 }
 
 .instagram-projetos {
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .ver-projetos {
     text-decoration: none;
 }
 
+.Certificados{
+    background-color: #EEDAD3;
+    
+}
+
+.Certificados h2{
+    background-color: #040404;
+    color: rgb(146, 37, 73);
+    font-size: 60px;
+    text-align: center;
+}
+
+.certificado-div{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 25px;
+   
+}
+
+.certificado-div img{
+    height: 70px;
+}
+
+.certificado-div a{
+   
+    border: 2px solid rgb(146, 37, 73);
+    color: rgb(146, 37, 73);
+    background-color: rgb(239, 206, 206);
+    border-radius: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    
+}
 footer {
-    background-color: #cee5f3;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    background-color: #040404;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
